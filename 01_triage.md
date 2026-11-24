@@ -1,16 +1,8 @@
-### A. Order
+# Part 1 | Triage
 
-1. **CPI validation — Performance Marketing** — deadline **Tuesday**
-2. **Q3 KPI snapshot / board pack — CPGO** — deadline **Thursday**
-3. **Lucky Plus uplift confirmation — CVM** — deadline **Sunday**
-4. **Loan limit cut (credit risk review) — Finance** — deadline **next month**
+I’d handle Marketing first for Tuesday’s budget lock, then the CPGO for Thursday’s board pack, CVM before next week’s send, and Finance before next month’s policy change. For requests with similar deadlines, I’d prioritize the decision with greater impact or more teams waiting on it. I’d confirm the CVM and Finance decision deadlines today.
 
-> **Order note:** the order is based on **deadline**. **Impact** is used only as a **tiebreaker** — between items on the same or near-same deadline, and as the rule for what gets cut first if capacity collapses. For each request, a follow-up question about **impact and how critical it is as a downstream dependency** is used to resolve the tiebreak (and to set the assurance level / flag list, not to reorder execution).
-
-### B. What would you ask each person today
-
-_empty for now_
-
-### C. What would you need to clarify
-
-_empty for now_
+1. **Performance Marketing:** “I’ll check the reported CPI and compare what each channel delivers after install before Tuesday’s lock. Is December’s goal more installs or more activated users?”
+2. **CPGO:** “I’ll send the Q3 snapshot for Thursday and reconcile the deposit headline. Can you share the source of the EGP 59M figure and confirm which deposits the board pack should count?”
+3. **CVM:** “I’ll check the August lift before the next send. What comparison group and subscription window produced the reported lift, and when do you need a rollout decision?”
+4. **Finance:** “I’ll check whether July and September loans had the same time to reach DPD30 before weighing in on the cut. How was the reported rate calculated, which limits would change, and when is the decision due?”
