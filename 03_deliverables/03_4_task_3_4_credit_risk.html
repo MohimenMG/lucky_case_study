@@ -7805,14 +7805,14 @@ a.anchor-link {
 <h1 id="Task-3.4-%7C-Credit-risk">Task 3.4 | Credit risk<a class="anchor-link" href="#Task-3.4-%7C-Credit-risk">¶</a></h1><blockquote>
 <p><strong>Credit:</strong> Is credit quality deteriorating? Is cutting limits by 30% for everyone the right fix? If not, propose something better.</p>
 </blockquote>
-<p><strong>Yes, September loans performed worse at the same repayment checkpoint.</strong> Mature DPD30 rose from <strong>6.54% in July</strong> and <strong>5.85% in August</strong> to <strong>9.63% in September</strong>. September also had the highest rate when comparing loans disbursed on days 1–22 of each month.</p>
+<p><strong>September’s observed default rate was higher.</strong> Among loans that reached 30 days past due (DPD30), the default rate rose from <strong>6.54% in July</strong> to <strong>9.63% in September</strong>. September also had the highest rate when comparing loans disbursed on days 1–22 of each month. The mix of borrowers changed over the same period, so the increase alone is insufficient to conclude that credit quality deteriorated across the portfolio.</p>
 <table>
 <thead>
 <tr>
 <th>Disbursal month</th>
 <th style="text-align:right">Short of full repayment at extract</th>
-<th style="text-align:right">Mature DPD30</th>
-<th style="text-align:right">Mature DPD30 for disbursals on days 1–22</th>
+<th style="text-align:right">Mature DPD30 default rate</th>
+<th style="text-align:right">Mature DPD30 rate for disbursals on days 1–22</th>
 </tr>
 </thead>
 <tbody>
@@ -7836,8 +7836,80 @@ a.anchor-link {
 </tr>
 </tbody>
 </table>
-<p>Finance’s <strong>~12%</strong> is consistent with the share of all September loans still short of full repayment on November 5. That measure includes <strong>270 September loans</strong> that had yet to reach DPD30. The mature DPD30 rate compares only loans that reached the same checkpoint.</p>
-<p><strong>Use a targeted limit policy instead of a blanket 30% cut.</strong> Start with four repayment bands and use repeat repayment history to decide who qualifies for a higher limit.</p>
+<p>Finance’s <strong>~12%</strong> is consistent with the share of all September loans still short of full repayment on November 5. That denominator includes <strong>270 loans</strong> that had yet to reach DPD30. The <strong>9.63%</strong> uses the <strong>353 loans</strong> that had reached the checkpoint.</p>
+<h2 id="Where-defaults-and-credit-losses-concentrate">Where defaults and credit losses concentrate<a class="anchor-link" href="#Where-defaults-and-credit-losses-concentrate">¶</a></h2><p>Meta and TikTok’s combined share of mature loans rose from <strong>26% in July (68/260)</strong> to <strong>41% in September (145/353)</strong>. Across Q3, those channels accounted for <strong>50 of 76 defaults</strong> and <strong>EGP 58,261.27 of EGP 89,831.40 in credit losses</strong>. This makes borrower mix and underwriting in those cohorts the first areas to investigate.</p>
+<table>
+<thead>
+<tr>
+<th>Acquisition channel</th>
+<th style="text-align:right">Mature loans</th>
+<th style="text-align:right">DPD30 defaults</th>
+<th style="text-align:right">DPD30 rate</th>
+<th style="text-align:right">Collected fees (EGP)</th>
+<th style="text-align:right">Credit loss (EGP)</th>
+<th style="text-align:right">Fees less credit loss (EGP)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meta</td>
+<td style="text-align:right">270</td>
+<td style="text-align:right">41</td>
+<td style="text-align:right">15.19%</td>
+<td style="text-align:right">23,800.00</td>
+<td style="text-align:right">46,032.82</td>
+<td style="text-align:right">−22,232.82</td>
+</tr>
+<tr>
+<td>TikTok</td>
+<td style="text-align:right">71</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">12.68%</td>
+<td style="text-align:right">6,760.00</td>
+<td style="text-align:right">12,228.45</td>
+<td style="text-align:right">−5,468.45</td>
+</tr>
+<tr>
+<td>Unknown</td>
+<td style="text-align:right">105</td>
+<td style="text-align:right">4</td>
+<td style="text-align:right">3.81%</td>
+<td style="text-align:right">10,800.00</td>
+<td style="text-align:right">5,576.39</td>
+<td style="text-align:right">5,223.61</td>
+</tr>
+<tr>
+<td>Other (organic, direct, referral)</td>
+<td style="text-align:right">281</td>
+<td style="text-align:right">9</td>
+<td style="text-align:right">3.20%</td>
+<td style="text-align:right">26,640.00</td>
+<td style="text-align:right">12,744.88</td>
+<td style="text-align:right">13,895.12</td>
+</tr>
+<tr>
+<td>Google Ads</td>
+<td style="text-align:right">313</td>
+<td style="text-align:right">13</td>
+<td style="text-align:right">4.15%</td>
+<td style="text-align:right">31,360.00</td>
+<td style="text-align:right">13,248.86</td>
+<td style="text-align:right">18,111.14</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align:right"><strong>1,040</strong></td>
+<td style="text-align:right"><strong>76</strong></td>
+<td style="text-align:right"><strong>7.31%</strong></td>
+<td style="text-align:right"><strong>99,360.00</strong></td>
+<td style="text-align:right"><strong>89,831.40</strong></td>
+<td style="text-align:right"><strong>9,528.60</strong></td>
+</tr>
+</tbody>
+</table>
+<p>These are observed outcomes by acquisition channel. Fees less credit loss excludes funding, servicing, and collection costs.</p>
+<h2 id="Recommendation">Recommendation<a class="anchor-link" href="#Recommendation">¶</a></h2><p><strong>Hold off on the blanket 30% cut.</strong> Start by reviewing whether borrower profiles, approval criteria, or assigned limits differed in the Meta and TikTok cohorts. The extract records the principal borrowers took out. To evaluate a change in maximum limits, we need the limits they were actually assigned and the amounts they requested.</p>
+<p>Use the repayment bands below as a starting point for a targeted policy pilot. The Q3 extract contains one loan per borrower, so repeat repayment history is needed to assess consistency.</p>
 <table>
 <thead>
 <tr>
@@ -7850,30 +7922,27 @@ a.anchor-link {
 <tr>
 <td>Fully repaid by the due date</td>
 <td style="text-align:right">658</td>
-<td>Review for a limit increase quarterly when repeat repayments are consistently on time and the borrower can afford the increase.</td>
+<td>Consider quarterly limit increases for borrowers with a consistent record of on-time repayment and verified affordability.</td>
 </tr>
 <tr>
 <td>Fully repaid after the due date, by DPD30</td>
 <td style="text-align:right">306</td>
-<td>Hold the current limit and pause upgrades. Record the reasons for late payment.</td>
+<td>Hold the current limit and review why repayment was late before considering an increase.</td>
 </tr>
 <tr>
-<td>Reached DPD30 and later repaid in full</td>
+<td>Defaulted at DPD30 and later repaid in full</td>
 <td style="text-align:right">0</td>
-<td>Record why these borrowers eventually repaid and test a lower renewal limit once enough cases are available.</td>
+<td>Review cure reasons and test a lower renewal limit once enough cases are available.</td>
 </tr>
 <tr>
-<td>Reached DPD30 and still short of full repayment at extract</td>
+<td>Defaulted at DPD30 and still short at extract</td>
 <td style="text-align:right">76</td>
-<td>Suspend new borrowing until full repayment and reassessment.</td>
+<td>Pause new borrowing pending full repayment and reassessment.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Follow-up-analysis-and-data-needs">Follow-up analysis and data needs<a class="anchor-link" href="#Follow-up-analysis-and-data-needs">¶</a></h2><p><strong>Identify borrowers who could qualify for higher limits.</strong> Request longer loan and repayment histories, current and historical assigned limits, and verified income and obligations. Use total principal borrowed over a defined period to flag borrowers with sustained demand. Use repayment consistency and affordability to decide who qualifies for an increase. The Q3 extract has one loan per borrower, so it cannot establish either sustained demand or repeat on-time repayment. If Lucky wants to explore larger loans backed by a car or property, assess that as a separate secured-loan pilot with verified ownership, valuation, and repayment capacity.</p>
-<p><strong>Check whether payday timing explains late payments and cures.</strong> Request verified salary payment dates or recurring income inflow dates, loan disbursal and due dates, actual repayment dates, and recorded reasons for late payment. Check whether late borrowers tend to repay shortly after payday. If that pattern holds, test scheduling the <strong>repayment due date shortly after payday</strong>. The loan disbursal date matters insofar as it determines when repayment falls. Compare on-time repayment, DPD30, and net contribution against the existing schedule.</p>
-<p><strong>Measure the financial impact of the limit policy.</strong> Pilot the changes against the current policy and compare net loan contribution per eligible borrower. Count collected fees on fully repaid loans and deduct unrecovered principal and incremental funding, servicing, and collection costs. Track on-time repayment and DPD30 alongside contribution.</p>
-<p><strong>Assumptions.</strong> Assign each loan to its disbursal month. Use November 5 as the extract date and include a loan in the mature DPD30 denominator once its due date plus 30 days has arrived. Treat the last recorded payment date as the date of full repayment when the recorded balance is within EGP 0.01 of principal plus fee. Full repayment on the due date counts as on time. Full repayment on the DPD30 checkpoint avoids DPD30 default. Loans still short at extract may repay later.</p>
-<p>Repeated borrowing shows demand for a higher limit. Consistent repayment and verified affordability support granting it</p>
+<p><strong>Data and pilot.</strong> Request assigned limits, requested amounts, underwriting inputs and approval decisions, repeat loan histories, and recorded reasons for late repayment. Once the main risk differences are understood, test targeted changes against the current policy. Compare collected fees less credit losses and incremental funding, servicing, and collection costs per eligible borrower. Track DPD30 alongside the financial result.</p>
+<p><strong>Assumptions.</strong> Group loans by disbursal month. A loan is mature if its due date plus 30 days is on or before the November 5 extract. Treat repayment within EGP 0.01 of principal plus fee as full repayment, using the last recorded payment date as a proxy for when the loan was fully repaid. Full repayment on the checkpoint date avoids DPD30 default. Count fees on fully repaid loans and estimate credit loss on defaulted loans as principal less repayments recorded at extract, floored at zero.</p>
 </div>
 </div>
 </div>
@@ -8449,16 +8518,120 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=90f01014">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=90f01014">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">sql</span>
+<span class="c1">-- A3. Compare Q3 mature loan outcomes and economics by acquisition channel.</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">mature_loan_economics</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">SELECT</span><span class="w"> </span><span class="k">COALESCE</span><span class="p">(</span><span class="n">u</span><span class="p">.</span><span class="n">channel</span><span class="p">,</span><span class="w"> </span><span class="s1">'Unknown'</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">channel</span><span class="p">,</span>
+<span class="w">           </span><span class="n">q</span><span class="p">.</span><span class="n">default_at_dpd30</span><span class="p">,</span>
+<span class="w">           </span><span class="k">CASE</span>
+<span class="w">               </span><span class="k">WHEN</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">short_at_extract</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">fee_egp</span>
+<span class="w">               </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">           </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">collected_fee_egp</span><span class="p">,</span>
+<span class="w">           </span><span class="k">CASE</span>
+<span class="w">               </span><span class="k">WHEN</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">default_at_dpd30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">               </span><span class="k">THEN</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">principal_egp</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">amount_repaid_egp</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">               </span><span class="k">ELSE</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">           </span><span class="k">END</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">credit_loss_egp</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">q3_loan_outcomes</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">q</span>
+<span class="w">    </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">u</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">u</span><span class="p">.</span><span class="n">user_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">user_id</span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">is_mature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">)</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="n">channel</span><span class="p">,</span>
+<span class="w">       </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">mature_loans</span><span class="p">,</span>
+<span class="w">       </span><span class="k">SUM</span><span class="p">(</span><span class="n">default_at_dpd30</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">dpd30_defaults</span><span class="p">,</span>
+<span class="w">       </span><span class="n">ROUND</span><span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">AVG</span><span class="p">(</span><span class="n">default_at_dpd30</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">dpd30_pct</span><span class="p">,</span>
+<span class="w">       </span><span class="n">ROUND</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">collected_fee_egp</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">collected_fees_egp</span><span class="p">,</span>
+<span class="w">       </span><span class="n">ROUND</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">credit_loss_egp</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">credit_loss_egp</span><span class="p">,</span>
+<span class="w">       </span><span class="n">ROUND</span><span class="p">(</span><span class="k">SUM</span><span class="p">(</span><span class="n">collected_fee_egp</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">credit_loss_egp</span><span class="p">),</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">fees_less_credit_loss_egp</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">mature_loan_economics</span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">channel</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">fees_less_credit_loss_egp</span><span class="p">;</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<span style="None">Running query in 'sqlite://'</span>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<table>
+<thead>
+<tr>
+<th>channel</th>
+<th>mature_loans</th>
+<th>dpd30_defaults</th>
+<th>dpd30_pct</th>
+<th>collected_fees_egp</th>
+<th>credit_loss_egp</th>
+<th>fees_less_credit_loss_egp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meta</td>
+<td>270</td>
+<td>41</td>
+<td>15.19</td>
+<td>23800.0</td>
+<td>46032.82</td>
+<td>-22232.82</td>
+</tr>
+<tr>
+<td>TikTok</td>
+<td>71</td>
+<td>9</td>
+<td>12.68</td>
+<td>6760.0</td>
+<td>12228.45</td>
+<td>-5468.45</td>
+</tr>
+<tr>
+<td>Unknown</td>
+<td>105</td>
+<td>4</td>
+<td>3.81</td>
+<td>10800.0</td>
+<td>5576.39</td>
+<td>5223.61</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>281</td>
+<td>9</td>
+<td>3.2</td>
+<td>26640.0</td>
+<td>12744.88</td>
+<td>13895.12</td>
+</tr>
+<tr>
+<td>Google Ads</td>
+<td>313</td>
+<td>13</td>
+<td>4.15</td>
+<td>31360.0</td>
+<td>13248.86</td>
+<td>18111.14</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>

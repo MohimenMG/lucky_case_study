@@ -7839,6 +7839,30 @@ a.anchor-link {
 <td>794 raw users and 764 after QA exclusion. Every nonblank normalized source matched an alias.</td>
 <td>Kept these users in overall reporting and classified their source as <strong>Unknown</strong> in channel reporting. They receive no paid-channel attribution.</td>
 </tr>
+<tr>
+<td>Reporting time zone</td>
+<td>Reconciled successful deposits on the UTC and Cairo reporting calendars using the case’s fixed UTC+2 offset</td>
+<td>After deduplication and QA exclusion, the Q3 total changed from 7,001 deposits in UTC to 6,995 in Cairo</td>
+<td>Use Cairo for calendar reporting and elapsed time for activation windows. The Cairo adjustment reduced Q3 deposit volume by <strong>EGP 2,300</strong>.</td>
+</tr>
+<tr>
+<td>Platform-reported installs and attributed signups measure different steps</td>
+<td>Compared platform install totals with signups attributed through normalized <code>utm_source</code></td>
+<td>Meta reported <strong>3,355 installs</strong> and had <strong>2,094 attributed signups</strong>. Google Ads reported <strong>1,803 installs</strong> and had <strong>1,427 attributed signups</strong>.</td>
+<td>Use reported installs for CPI and attributed signups for signup-to-activation rates. The totals come from different sources, so their gap does not establish install overcounting.</td>
+</tr>
+<tr>
+<td>Deposit volume concentrated on September 3</td>
+<td>Grouped cleaned successful deposits by Cairo reporting day and inspected the transaction rows</td>
+<td><strong>EGP 10.297M</strong> across <strong>89 deposits</strong> on September 3, or <strong>51.76%</strong> of cleaned Q3 volume</td>
+<td>Keep qualifying deposits in the official <strong>EGP 19.89M</strong> total. Show <strong>EGP 9.60M</strong> excluding September 3 as a sensitivity and ask Finance to identify what drove the spike.</td>
+</tr>
+<tr>
+<td>Some September loans had yet to reach DPD30</td>
+<td>Compared each loan’s due date plus 30 days with the November 5 extract date</td>
+<td><strong>270 of 623</strong> September loans were immature</td>
+<td>Keep all loans in disbursal reporting. Use only mature loans in the DPD30 denominator. September was <strong>34/353 (9.63%)</strong> at DPD30, versus <strong>73/623 (11.72%)</strong> short of full repayment at extract.</td>
+</tr>
 </tbody>
 </table>
 <blockquote>
@@ -7886,7 +7910,17 @@ a.anchor-link {
 <p>The paid-channel comparison groups Referral, Organic, and Direct as <strong>Other</strong>.</p>
 <h3 id="Validation-and-findings">Validation and findings<a class="anchor-link" href="#Validation-and-findings">¶</a></h3><p>The cleaned exports contain <strong>6,200 users</strong> and <strong>41,119 transactions</strong>. Loans, Plus subscriptions, CVM assignments, and marketing spend retained all <strong>1,310</strong>, <strong>111</strong>, <strong>697</strong>, and <strong>276</strong> rows, respectively.</p>
 <p>The validation cell found zero missing key values, repeated keys, or unmatched user links across the tables checked. All <strong>137</strong> holdout assignments had blank send timestamps, as expected. The <strong>82</strong> blank Plus end dates indicate subscriptions open at extract. Blank KYC verification and last repayment dates were preserved.</p>
-<p><strong>QA exclusions explain most of the deposit correction. Missing UTMs are the main unresolved attribution issue.</strong> The KPI notebook completes the deposit reconciliation using the Cairo reporting window. The Marketing notebook assesses how missing attribution affects the channel comparison.</p>
+<p><strong>What carries into the analysis.</strong> QA exclusions explain most of the deposit correction. The KPI notebook shows how sensitive the headline is to September 3, the marketing notebook keeps install and activation measures separate, and the credit notebook compares loans at the same repayment checkpoint. Missing UTMs remain an unresolved attribution issue.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -7895,7 +7929,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
@@ -7926,7 +7960,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Read the six data sheets from the original workbook.</span>
@@ -7952,7 +7986,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Users: find exact copies and derive QA IDs from the reviewed name patterns.</span>
@@ -8192,7 +8226,7 @@ QA users removed: 30
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Transactions: remove exact copies first so QA rows are counted once.</span>
@@ -8253,7 +8287,7 @@ Clean transactions: 41,119
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Loans: profiling found no rows needing removal.</span>
@@ -8285,7 +8319,7 @@ Clean loans: 1,310 / 1,310 rows
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Plus subscriptions: profiling found no rows needing removal.</span>
@@ -8317,7 +8351,7 @@ Clean plus subscriptions: 111 / 111 rows
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cvm campaigns: profiling found no rows needing removal.</span>
@@ -8349,7 +8383,7 @@ Clean cvm campaigns: 697 / 697 rows
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Marketing spend: profiling found no rows needing removal.</span>
@@ -8381,7 +8415,7 @@ Clean marketing spend: 276 / 276 rows
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Validate the cleaned tables and report expected blanks.</span>
